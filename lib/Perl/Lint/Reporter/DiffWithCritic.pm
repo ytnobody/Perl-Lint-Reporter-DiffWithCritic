@@ -1,5 +1,5 @@
 package Perl::Lint::Reporter::DiffWithCritic;
-use 5.018001;
+use 5.014;
 use strict;
 use warnings;
 
