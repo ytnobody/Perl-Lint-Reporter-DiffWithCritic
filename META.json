@@ -1,10 +1,10 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Reporter tool for Perl::Lint with differences to Perl::Critic",
    "author" : [
       "ytnobody <ytnobody@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.142060",
+   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.141520",
    "license" : [
       "perl_5"
    ],
@@ -42,16 +42,34 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001"
+            "List::MoreUtils" : "0",
+            "Perl::Critic" : "0",
+            "Term::ANSIColor" : "0",
+            "Text::WordDiff" : "0",
+            "perl" : "5.014"
          }
       },
       "test" : {
          "requires" : {
+            "Capture::Tiny" : "0",
+            "Perl::Lint" : "0",
+            "Test::Differences" : "0",
             "Test::More" : "0.98"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ytnobody/Perl-Lint-Reporter-DiffWithCritic/issues"
+      },
+      "homepage" : "https://github.com/ytnobody/Perl-Lint-Reporter-DiffWithCritic",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ytnobody/Perl-Lint-Reporter-DiffWithCritic.git",
+         "web" : "https://github.com/ytnobody/Perl-Lint-Reporter-DiffWithCritic"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:YTURTLE"
 }
