@@ -25,6 +25,10 @@ Perl::Lint::Reporter::DiffWithCritic is a reporter tool for Perl::Lint with diff
 
 Output a report that about differences of violation among Perl::Lint and Perl::Critic
 
+## violations\_diff($violations, %perl\_critic\_options);
+
+Return violations difference data as array.
+
 # LICENSE
 
 Copyright (C) ytnobody.
