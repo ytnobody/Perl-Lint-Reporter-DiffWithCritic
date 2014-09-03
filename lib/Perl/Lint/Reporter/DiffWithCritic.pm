@@ -40,6 +40,7 @@ sub violations_diff {
         my $item = $_;
         my ($status) = $item =~ /^<(ins|del)>/;
         $item =~ s/^<(?:ins|del)>//g;
+        $item =~ s/\&quot\;/"/g;
         my @vals = $item =~ /(.+?):(.+?)\n  (.+?) \((.+?)\)\n  \[(.+?)\]\n/m;
         +{ mesh( @keys, @vals ), status => $status };
     } @items;
